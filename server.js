@@ -17,6 +17,7 @@ app.use(expressLayout)
 app.set('views',path.join(__dirname, 'resources/views')) // sets views
 app.set('view engine', 'ejs')  // Tell app to use ejs template engine
 
+// Routes
 app.get('/', (req,res) => {
     res.send('Hello World')
 })
