@@ -4,11 +4,33 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "serve": "node server.js",
+    "dev": "nodemon server.js",
+    "development": "mix",
+    "production": "mix -p",
+    "watch": "mix watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pavan Boro",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.21.1",
+    "connect-mongo": "^4.4.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "mongoose": "^5.12.15",
+    "noty": "^3.2.0-beta-deprecated"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.25",
+    "nodemon": "^2.0.7",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0"
   }
 }
