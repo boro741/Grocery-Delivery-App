@@ -9,4 +9,4 @@ const grocerySchema = new Schema({
     groceryType: { type: String, required: true }
 })
 
-module.exports = mongoose.model('Grocery', menuSchema)
+module.exports = mongoose.model('Grocery', grocerySchema)

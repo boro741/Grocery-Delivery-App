@@ -7,6 +7,13 @@ const mongoose = require('mongoose')
 const session = require('express-session')
 const flash = require('express-flash')
 const MongoDbStore = require('connect-mongo')(session)
+/*
+const MongoDbStore = require('connect-mongo')(session)
+Gives error: 
+        TypeError: Class constructor MongoStore cannot be invoked without 'new'
+Solution: https://stackoverflow.com/questions/66654037/mongo-connect-error-with-mongo-connectsession
+
+*/
 const passport = require('passport')
 
 // Initialize Express app
@@ -15,8 +22,7 @@ const app = express()
 const PORT = process.env.PORT || 3000; // process.env is made available by dotenv. Stores env constants in .env file 
 
 // Database connection
-const url = 'mongodb://localhost/grozzys';
-mongoose.connect(url, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology: true, useFindAndModify : true });
+mongoose.connect(process.env.MONGO_CONNECTION_URL, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology: true, useFindAndModify : true });
 const connection = mongoose.connection;
 connection.once('open', () => {
     console.log('Database connected...');
@@ -33,11 +39,11 @@ let mongoStore = new MongoDbStore({
 
 // Session config
 app.use(session({
-secret: process.env.COOKIE_SECRET,
-resave: false, 
-store: mongoStore,
-saveUninitialized: false, 
-cookie: { maxAge: 1000 * 60 * 60 * 24 } // 24 hour 
+    secret: process.env.COOKIE_SECRET,
+    resave: false, 
+    store: mongoStore,
+    saveUninitialized: false, 
+    cookie: { maxAge: 1000 * 60 * 60 * 24 } // 24 hour 
 }))
 
 // Passport config 
@@ -70,8 +76,6 @@ app.set('view engine', 'ejs')  // Tell app to use ejs template engine
 
 // Routes and pass app instance
 require('./routes/web')(app)
-
-
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
