@@ -9,6 +9,7 @@ const app = express()
 const PORT = process.env.PORT || 3000; // process.env is made available by dotenv. Stores env constants in .env file 
 
 
+
 // Make public folder accessible to client-side
 app.use(express.static('public'))
 
@@ -19,8 +20,9 @@ app.set('view engine', 'ejs')  // Tell app to use ejs template engine
 
 // Routes
 app.get('/', (req,res) => {
-    res.send('Hello World')
+    res.render('home')
 })
+
 
 
 app.listen(PORT, () => {

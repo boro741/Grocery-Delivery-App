@@ -1,1 +1,89 @@
+#logo {
+  width: 20%;
+  height: 20%;
+}
 
+.sticky {
+  background: #ffffff;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #5b8f41;
+  margin: 1em 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+}
+
+nav li:last-child a {
+  background: #5b8f41;
+}
+
+nav li:last-child a:hover {
+  background: #395f26;
+}
+
+nav li a {
+  transition: all 0.3s ease-in-out;
+}
+
+nav li a:hover {
+  color: #5b8f41;
+}
+
+section.hero {
+  background: #F8F8F8;
+}
+
+.size {
+  background: #F8F8F8;
+}
+
+.add-to-cart {
+  border: 2px solid #5b8f41;
+  color: #5b8f41;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+  background: #5b8f41;
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-primary {
+  background: #5b8f41;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #395f26;
+}
+
+section.cart {
+  background: #F8F8F8;
+}
+
+section.cart .amount {
+  color: #5b8f41;
+}
+
+section.login {
+  background: #F8F8F8;
+  min-height: calc(100vh - 86px);
+}
+
+section.login a {
+  color: #5b8f41;
+}
+
+section.login a:hover {
+  color: #395f26;
+}
