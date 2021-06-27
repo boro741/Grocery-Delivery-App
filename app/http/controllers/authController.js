@@ -79,6 +79,9 @@ function authController() {
         logout(req, res) {
           req.logout()
           return res.redirect('/login')  
+            //  req.session.destroy(function (err) {
+            //     res.redirect('/login'); //Inside a callback… bulletproof!
+            //   });
         }
     }
 }

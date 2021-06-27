@@ -18,6 +18,15 @@ hr {
     margin: 1em 0; padding: 0;
 }
 
+.order_button {
+  &:focus {
+    outline: none;
+}
+}
+
+
+
+
 body {
     font-family: "Lato", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -52,13 +61,15 @@ body {
     border: 2px solid $primary;
     color: $primary;
     transition: $smooth;
-  }
-  
-  .add-to-cart:hover {
-    background: $primary;
-    border-color: $pure;
-    color: $pure;
-  }
+    &:hover {
+        background: $primary;
+        border-color: $pure;
+        color: $pure;
+    }
+    &:focus {
+        outline: none;
+    }
+}
   
   .btn-primary {
     background: $primary;
