@@ -1,3 +1,7 @@
+@import './variables';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
+
 // Logo
 #logo {
     width: 20%;
@@ -5,12 +9,12 @@
 }
 
 .sticky{
-    background: #ffffff;
+    background: $pure;
 }
 
 hr {
     display: block; height: 1px;
-    border: 0; border-top: 1px solid #5b8f41;
+    border: 0; border-top: 1px solid $primary;
     margin: 1em 0; padding: 0;
 }
 
@@ -21,68 +25,75 @@ body {
   }
   
   nav li:last-child a {
-    background: #5b8f41;
+    background: $primary;
   }
   
   nav li:last-child a:hover {
-    background: #395f26;
+    background: $primary-hover;
   }
   
   nav li a {
-    transition: all 0.3s ease-in-out;
+    transition: $smooth;
   }
   
   nav li a:hover {
-    color: #5b8f41;
+    color: $primary;
   }
   
   section.hero {
-    background: #F8F8F8;
+    background: $secondary;
   }
   
   .size {
-    background: #F8F8F8;
+    background: $secondary;
   }
   
   .add-to-cart {
-    border: 2px solid #5b8f41;
-    color: #5b8f41;
-    transition: all 0.3s ease-in-out;
+    border: 2px solid $primary;
+    color: $primary;
+    transition: $smooth;
   }
   
   .add-to-cart:hover {
-    background: #5b8f41;
-    border-color: #fff;
-    color: #fff;
+    background: $primary;
+    border-color: $pure;
+    color: $pure;
   }
   
   .btn-primary {
-    background: #5b8f41;
-    transition: all 0.3s ease-in-out;
+    background: $primary;
+    transition: $smooth;
   }
   
   .btn-primary:hover {
-    background: #395f26;
+    background: $primary-hover;
   }
   
   section.cart {
-    background: #F8F8F8;
-  }
-  
-  section.cart .amount {
-    color: #5b8f41;
-  }
+    background: $secondary;
+    .amount {
+        color: $primary;
+    }
+}
   
   section.login {
-    background: #F8F8F8;
+    background: $secondary;
     min-height: calc(100vh - 86px);
   }
   
   section.login a {
-    color: #5b8f41;
+    color: $primary;
   }
   
   section.login a:hover {
-    color: #395f26;
+    color: $primary-hover;
   }
   
+  .noty_theme__mint {
+    border-radius: 50px!important;
+    padding-left: 8px!important;
+  }
+
+  a.link {
+    color: $primary;
+  }
