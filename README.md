@@ -21,6 +21,9 @@
 **app** --> Contains all the business logic like Controllers, Middlewares, Models etc.
 resources --> Using laravel mix compiles the js and scss files to public folder.
 
+<h2>Demo: https://www.youtube.com/watch?v=cpqTd2ydwbQ</h2>
+
+
 <br>
 <hr>
 <h2>Home Page: </h2>
