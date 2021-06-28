@@ -20,3 +20,8 @@
 
 **app** --> Contains all the business logic like Controllers, Middlewares, Models etc.
 resources --> Using laravel mix compiles the js and scss files to public folder.
+
+<br>
+<hr>
+<h2>Home Page: </h2>
+![Home Page](https://github.com/boro741/Grocery-Delivery-App/blob/master/home.png)
