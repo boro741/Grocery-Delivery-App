@@ -18,5 +18,5 @@
         2. web.js
         
 
-app --> Contains all the business logic like Controllers, Middlewares, Models etc.
+**app** --> Contains all the business logic like Controllers, Middlewares, Models etc.
 resources --> Using laravel mix compiles the js and scss files to public folder.
