@@ -25,3 +25,6 @@ resources --> Using laravel mix compiles the js and scss files to public folder.
 <hr>
 <h2>Home Page: </h2>
 <img src="https://user-images.githubusercontent.com/16509376/123604975-fc619380-d818-11eb-92ee-3bcfa4a88c6a.png">
+
+<h2>Grocery Page: </h2>
+<img src="https://user-images.githubusercontent.com/16509376/123605409-6c701980-d819-11eb-8607-415f5267519b.png" >
