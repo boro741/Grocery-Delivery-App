@@ -24,4 +24,4 @@ resources --> Using laravel mix compiles the js and scss files to public folder.
 <br>
 <hr>
 <h2>Home Page: </h2>
-![Home Page](https://github.com/boro741/Grocery-Delivery-App/blob/master/home.png)
+![Home Page](![image](https://user-images.githubusercontent.com/16509376/123604975-fc619380-d818-11eb-92ee-3bcfa4a88c6a.png))
